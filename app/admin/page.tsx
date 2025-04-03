@@ -107,7 +107,7 @@ export default function AdminPage() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              ${stats.totalPurchaseAmount.toFixed(2)}
+              ₹{stats.totalPurchaseAmount.toFixed(2)}
             </div>
           </CardContent>
         </Card>
@@ -120,7 +120,7 @@ export default function AdminPage() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              ${stats.totalDiscountAmount.toFixed(2)}
+              ₹{stats.totalDiscountAmount.toFixed(2)}
             </div>
           </CardContent>
         </Card>

@@ -34,13 +34,13 @@ export default function Home() {
     setUserId(storedUserId)
 
     // Get order count from localStorage
-    const storedOrderCount = localStorage.getItem(`orderCount_₹{storedUserId}`)
+    const storedOrderCount = localStorage.getItem(`orderCount_${storedUserId}`)
     if (storedOrderCount) {
       setOrderCount(Number.parseInt(storedOrderCount, 10))
     }
 
     // Get available discount code from localStorage
-    const storedDiscountCode = localStorage.getItem(`discountCode_₹{storedUserId}`)
+    const storedDiscountCode = localStorage.getItem(`discountCode_${storedUserId}`)
     if (storedDiscountCode) {
       setAvailableDiscountCode(storedDiscountCode)
     }
